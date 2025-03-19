@@ -1,3 +1,4 @@
 # Lunthera.github.io
-hello!\n
+hello!
+
 This is a test page.
