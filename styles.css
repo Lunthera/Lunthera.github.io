@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column; /* 使内容垂直排列 */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.title {
+  font-size: 24px; /* 设置标题字体大小 */
+  font-weight: bold; /* 设置标题字体加粗 */
+  margin-bottom: 20px; /* 设置标题与容器之间的间距 */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 定义两列，每列宽度相等 */
+  grid-template-rows: 1fr 1fr;   /* 定义两行，每行高度相等 */
+  gap: 10px;                     /* 设置网格单元之间的间距 */
+  width: 400px;
+  height: 400px;
+  background-color: #91eea5;
+  border: 2px solid #000;
+  padding: 10px;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; /* 去掉超链接的下划线 */
+  background-color: rgb(255, 255, 255);
+  border: 3px solid #7edd83; /* 添加边框 */
+  overflow: hidden; /* 确保图像不会超出网格单元 */
+}
+
+.grid-item img {
+  width: 95%; /* 使图片宽度适应网格单元 */
+  height: auto; /* 使图片高度适应网格单元 */
+  object-fit: fill; /* 允许图像拉伸以填充单元格 */
+
+}
